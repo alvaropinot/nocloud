@@ -4,3 +4,10 @@
 
 # nocloud 🔄🚫☁️
 iCloud nosync cli
+
+
+## 🙏 Thanks
+
+Logo inspiration:
+- Sync by **ProSymbols** from the Noun Project
+- Cloud by **Kumar** from the Noun Project
