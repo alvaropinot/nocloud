@@ -26,15 +26,21 @@ Make it executable by running:
 $ chmod +x nocloud.sh
 ```
 
+or install it globally by running:
+
+```sh
+$ install nocloud.sh /usr/local/bin/nocloud
+```
+
 Stop syncing any file or folder by running:
 
 ```sh
-$ ./nocloud.sh <name-of-the-file-or-folder> 
+$ nocloud <name-of-the-file-or-folder>
 ```
 
 **Example** If you dont want to sync your (>200MB) *node_modules* folder:
 ```sh
-$ ./nocloud.sh node_modules
+$ nocloud node_modules
 ```
 
 ## Tests
