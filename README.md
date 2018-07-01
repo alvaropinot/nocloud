@@ -1,0 +1,2 @@
+# nocloud
+🚫☁️ iCloud nosync
