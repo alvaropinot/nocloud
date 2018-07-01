@@ -1,6 +1,6 @@
 {
   "name": "nocloud",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "avoid fiels or folder to sync with iCloud",
   "main": "nocloud.sh",
   "scripts": {
