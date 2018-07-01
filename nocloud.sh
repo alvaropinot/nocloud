@@ -17,7 +17,7 @@
 #  None
 #######################################
 no_sync () {
-  echo "Stoping iCloud sync for $1"
+  echo "Stopping iCloud sync for $1"
 
   mv "$1" "$1.nosync"
   echo "Moved $1 to $1.nosync"
