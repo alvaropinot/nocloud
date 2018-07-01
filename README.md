@@ -62,7 +62,15 @@ $ nocloud node_modules
 - [ ] Create the the actual cli
 - [ ] Add prettier for bash. Is this feasible? 😅
 - [ ] Publish to homebrew formulas
-- [ ] semantic-release - will it blend? 👩‍🍳
+- [x] ~~semantic-release - will it blend? 👩‍🍳~~ It did blend!
+
+
+## not that FAQ
+
+**Q: Why is there a `package.json` file in a bash project, I see no JavaScript?**
+
+A: Why? Why not 😜! `package.json` holds the release script with `semantic-release` and some info about the project, 
+like the actual version. JavaScript everywhere! Even whenever the project it's not a JS one 😎
 
 
 ## 🙏 Thanks
