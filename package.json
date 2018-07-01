@@ -1,0 +1,32 @@
+{
+  "name": "nocloud",
+  "version": "1.0.0",
+  "description": "avoid fiels or folder to sync with iCloud",
+  "main": "nocloud.sh",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alvaropinot/nocloud.git"
+  },
+  "keywords": [
+    "icloud",
+    "cli",
+    "sync",
+    "ignore",
+    "nocloud",
+    "nosync"
+  ],
+  "author": "Alvaro Pinot <alvaro@neatnait.com> (http://github.com/alvaropinot)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvaropinot/nocloud/issues"
+  },
+  "homepage": "https://github.com/alvaropinot/nocloud#readme",
+  "devDependencies": {
+    "@semantic-release/exec": "^2.2.4",
+    "semantic-release": "^15.6.0"
+  }
+}
