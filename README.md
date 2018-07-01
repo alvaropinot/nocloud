@@ -5,6 +5,59 @@
 # nocloud 🔄🚫☁️
 iCloud nosync cli
 
+## What is nocloud?
+Firstly a WIP or quick POC. `nocloud` pretends to solve the problem of syncing files with iCloud that might need to follow 
+any given name convention. I'm 👀 at you `node_modules` folder 😅. 
+
+## How does it work?
+iCloud, as today, will ignore any file or folder ending in `.nosync` when syncing to the ☁️. Knowing that, **nocloud** does
+the following:
+
+1. Renames any given files or directories, adding the extension `.nosync`.
+2. Creates a symbolic link with the original name to the renamed one.
+
+## Usage
+
+Clone or download `nocloud.sh`
+
+Make it executable by running:
+
+```sh
+$ chmod +x nocloud.sh
+```
+
+Stop syncing any file or folder by running:
+
+```sh
+$ ./nocloud.sh <name-of-the-file-or-folder> 
+```
+
+**Example** If you dont want to sync your (>200MB) *node_modules* folder:
+```sh
+$ ./nocloud.sh node_modules
+```
+
+## Tests
+
+- Moves to `*.nosync` and creates a symbolic link with the original name
+  - Works for directories
+  - Works for files
+
+
+## TODO
+
+- [ ] Add exit codes
+- [ ] Undo the - removes the symbolyc link, then removes `.nosync` extension
+- [ ] Check conflicts
+- [x] Allow multiple arguments
+- [ ] Allow file patterns
+- [ ] TDD in bash 😅
+- [ ] Add silent mode 🤫
+- [ ] Create the the actual cli
+- [ ] Add prettier for bash. Is this feasible? 😅
+- [ ] Publish to homebrew formulas
+- [ ] semantic-release - will it blend? 👩‍🍳
+
 
 ## 🙏 Thanks
 
