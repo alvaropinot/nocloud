@@ -28,6 +28,6 @@ no_sync () {
 
 until [ -z "$1" ]  # Until all parameters used up.
 do
-  no_sync $1
+  no_sync "$1"
   shift # Shift param n+1 into $1.
 done
