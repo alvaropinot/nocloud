@@ -5,7 +5,7 @@
   "main": "nocloud.sh",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "semantic-release": "semantic-release"
+    "semantic-release": "npx semantic-release"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,5 @@
   "bugs": {
     "url": "https://github.com/alvaropinot/nocloud/issues"
   },
-  "homepage": "https://github.com/alvaropinot/nocloud#readme",
-  "devDependencies": {
-    "@semantic-release/exec": "^2.2.4",
-    "semantic-release": "^15.6.0"
-  }
+  "homepage": "https://github.com/alvaropinot/nocloud#readme"
 }
