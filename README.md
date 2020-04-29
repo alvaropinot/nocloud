@@ -2,8 +2,10 @@
   <img width="300" align="center" alt="nocloud" src="https://user-images.githubusercontent.com/6654199/42130706-5c3926e6-7cba-11e8-9274-4e5131ed755e.png">
 </p>
 
-# nocloud 🔄🚫☁️
+# nocloud recursive node_modules 🔄🚫☁️
 iCloud nosync cli
+
+# This fork is modified to recursively check and "fix" all node_modules in a given directory
 
 ## What is nocloud?
 Firstly a WIP or quick POC. `nocloud` pretends to solve the problem of syncing files with iCloud that might need to follow 
