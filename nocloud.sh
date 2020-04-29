@@ -17,13 +17,9 @@
 #  None
 #######################################
 no_sync () {
-  echo "Stopping iCloud sync for $1"
-
-  mv "$1" "$1.nosync"
-  echo "Moved $1 to $1.nosync"
-
-  ln -s "$1.nosync" "$1"
-  echo "Symbolic link created for $1.nosync -> $1"
+  echo "Stopping node_modules iCloud sync for all subdirectories in $1"
+  find $1 -depth -type d -name 'node_modules' -execdir mv {} {}.nosync \;
+  find $1 -depth -type d -name 'node_modules.nosync' -execdir ln -s {} node_modules \;
 }
 
 until [ -z "$1" ]  # Until all parameters used up.
